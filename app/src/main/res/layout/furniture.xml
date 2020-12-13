@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/furniture"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/border"
+    android:orientation="vertical"
+    app:layout_constraintCircleRadius="10dp">
+
+
+    <ImageView
+        android:id="@+id/fImage"
+        android:layout_width="94dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="254dp"
+        android:layout_height="22dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="4dp"
+        android:text="discription"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/furnitureName"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <TextView
+        android:id="@+id/furnitureName"
+        android:layout_width="259dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="16dp"
+        android:text="name"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="price"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fImage"
+        app:layout_constraintTop_toBottomOf="@+id/desc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
